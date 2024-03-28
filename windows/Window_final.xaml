@@ -1,0 +1,30 @@
+﻿<Window x:Class="practica_herder1.windows.Window_final"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:practica_herder1.windows"
+        mc:Ignorable="d"
+        Title="Window_final" Height="450" Width="800" Background="YellowGreen">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+      
+        <TextBlock x:Name="greeting" Text="Приветсвуем вас :" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="4" FontSize="30" TextAlignment="Center" FontWeight="Bold" />
+        <Button x:Name="ex" Click="ex_Click" Background="Transparent">
+            <Image Source="D:\practica_harder-day-2\images\exit.png"/>
+        </Button>
+        <Button Grid.Column="3" Name="create" Click="create_Click" Background="Transparent">
+            <Image Source="D:\practica_harder-day-2\images\new.png"/>
+        </Button>
+    </Grid>
+</Window>

@@ -1,0 +1,37 @@
+﻿<Window x:Class="practica_herder1.windows.rename"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:practica_herder1.windows"
+        mc:Ignorable="d"
+        Title="rename" Height="450" Width="800" Background="Aqua">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <TextBox x:Name="reLog" Grid.Row="1" Grid.ColumnSpan="3" Grid.Column="1"/>
+        <TextBox x:Name="reMail" Grid.Row="3" Grid.ColumnSpan="3" Grid.Column="1"/>
+        <TextBox x:Name="rePass" Grid.Row="5" Grid.ColumnSpan="3" Grid.Column="1"/>
+        <TextBlock Text="новый логин" Grid.Row="1" FontSize="20" Foreground="BlueViolet" FontWeight="Black"/>
+        <TextBlock Text="новый Email" Grid.Row="3" FontSize="20" Foreground="BlueViolet" FontWeight="Black"/>
+        <TextBlock Text="новый пароль" Grid.Row="5" FontSize="20" Foreground="BlueViolet" FontWeight="Black"/>
+        <Button x:Name="upd" Content="update" Grid.Row="7" Grid.Column="3" Click="upd_Click" Foreground="BlueViolet" FontWeight="Black" Background="Transparent"/>
+        <Button x:Name="ext" Content="exit" Grid.Row="7" Grid.Column="1" Click="ext_Click" Foreground="BlueViolet" FontWeight="Black" Background="Transparent" />
+    </Grid>
+    
+</Window>
